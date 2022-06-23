@@ -242,5 +242,5 @@ return [
     |
     */
 
-    'blacklist_storage' => HyperfExt\Jwt\Storage\HyperfCache::class,
+    'blacklist_storage' => Hyperf\Jwt\Storage\HyperfCache::class,
 ];
