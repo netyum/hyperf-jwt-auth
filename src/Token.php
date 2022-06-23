@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt;
+namespace Hyperf\Jwt;
 
 use Hyperf\Utils\ApplicationContext;
-use HyperfExt\Jwt\Contracts\TokenValidatorInterface;
+use Hyperf\Jwt\Contracts\TokenValidatorInterface;
 
 class Token
 {
@@ -21,7 +21,7 @@ class Token
     private $value;
 
     /**
-     * @var \HyperfExt\Jwt\Contracts\TokenValidatorInterface
+     * @var \Hyperf\Jwt\Contracts\TokenValidatorInterface
      */
     private $validator;
 

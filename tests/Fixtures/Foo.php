@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace HyperfTest\Fixtures;
 
-use HyperfExt\Jwt\Claims\AbstractClaim;
+use Hyperf\Jwt\Claims\AbstractClaim;
 
 class Foo extends AbstractClaim
 {

@@ -8,20 +8,20 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt\RequestParser;
+namespace Hyperf\Jwt\RequestParser;
 
-use HyperfExt\Jwt\Contracts\RequestParser\RequestParserInterface;
+use Hyperf\Jwt\Contracts\RequestParser\RequestParserInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
 class RequestParser implements RequestParserInterface
 {
     /**
-     * @var \HyperfExt\Jwt\Contracts\RequestParser\HandlerInterface[]
+     * @var \Hyperf\Jwt\Contracts\RequestParser\HandlerInterface[]
      */
     private $handlers;
 
     /**
-     * @param \HyperfExt\Jwt\Contracts\RequestParser\HandlerInterface[] $handlers
+     * @param \Hyperf\Jwt\Contracts\RequestParser\HandlerInterface[] $handlers
      */
     public function __construct(array $handlers = [])
     {

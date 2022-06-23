@@ -10,17 +10,17 @@ declare(strict_types=1);
  */
 namespace HyperfTest\Validators;
 
-use HyperfExt\Jwt\Claims\Collection;
-use HyperfExt\Jwt\Claims\Expiration;
-use HyperfExt\Jwt\Claims\IssuedAt;
-use HyperfExt\Jwt\Claims\Issuer;
-use HyperfExt\Jwt\Claims\JwtId;
-use HyperfExt\Jwt\Claims\NotBefore;
-use HyperfExt\Jwt\Claims\Subject;
-use HyperfExt\Jwt\Contracts\PayloadValidatorInterface;
-use HyperfExt\Jwt\Exceptions\InvalidClaimException;
-use HyperfExt\Jwt\Exceptions\TokenExpiredException;
-use HyperfExt\Jwt\Exceptions\TokenInvalidException;
+use Hyperf\Jwt\Claims\Collection;
+use Hyperf\Jwt\Claims\Expiration;
+use Hyperf\Jwt\Claims\IssuedAt;
+use Hyperf\Jwt\Claims\Issuer;
+use Hyperf\Jwt\Claims\JwtId;
+use Hyperf\Jwt\Claims\NotBefore;
+use Hyperf\Jwt\Claims\Subject;
+use Hyperf\Jwt\Contracts\PayloadValidatorInterface;
+use Hyperf\Jwt\Exceptions\InvalidClaimException;
+use Hyperf\Jwt\Exceptions\TokenExpiredException;
+use Hyperf\Jwt\Exceptions\TokenInvalidException;
 use HyperfTest\AbstractTestCase;
 
 /**
@@ -30,7 +30,7 @@ use HyperfTest\AbstractTestCase;
 class PayloadValidatorTest extends AbstractTestCase
 {
     /**
-     * @var \HyperfExt\Jwt\Validators\PayloadValidator
+     * @var \Hyperf\Jwt\Validators\PayloadValidator
      */
     protected $validator;
 

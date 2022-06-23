@@ -8,13 +8,13 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt\RequestParser;
+namespace Hyperf\Jwt\RequestParser;
 
-use HyperfExt\Jwt\RequestParser\Handlers\AuthHeaders;
-use HyperfExt\Jwt\RequestParser\Handlers\Cookies;
-use HyperfExt\Jwt\RequestParser\Handlers\InputSource;
-use HyperfExt\Jwt\RequestParser\Handlers\QueryString;
-use HyperfExt\Jwt\RequestParser\Handlers\RouteParams;
+use Hyperf\Jwt\RequestParser\Handlers\AuthHeaders;
+use Hyperf\Jwt\RequestParser\Handlers\Cookies;
+use Hyperf\Jwt\RequestParser\Handlers\InputSource;
+use Hyperf\Jwt\RequestParser\Handlers\QueryString;
+use Hyperf\Jwt\RequestParser\Handlers\RouteParams;
 
 class RequestParserFactory
 {

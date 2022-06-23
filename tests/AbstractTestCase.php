@@ -12,9 +12,9 @@ namespace HyperfTest;
 
 use Carbon\Carbon;
 use Hyperf\Utils\ApplicationContext;
-use HyperfExt\Jwt\Claims\Factory;
-use HyperfExt\Jwt\Contracts\ManagerInterface;
-use HyperfExt\Jwt\ManagerFactory;
+use Hyperf\Jwt\Claims\Factory;
+use Hyperf\Jwt\Contracts\ManagerInterface;
+use Hyperf\Jwt\ManagerFactory;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
@@ -31,12 +31,12 @@ abstract class AbstractTestCase extends TestCase
     protected $container;
 
     /**
-     * @var \HyperfExt\Jwt\Contracts\ManagerInterface|\HyperfExt\Jwt\Manager|\Mockery\LegacyMockInterface|\Mockery\MockInterface
+     * @var \Hyperf\Jwt\Contracts\ManagerInterface|\Hyperf\Jwt\Manager|\Mockery\LegacyMockInterface|\Mockery\MockInterface
      */
     protected $manager;
 
     /**
-     * @var \HyperfExt\Jwt\Claims\Factory
+     * @var \Hyperf\Jwt\Claims\Factory
      */
     protected $claimFactory;
 

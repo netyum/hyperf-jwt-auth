@@ -8,9 +8,9 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt\Claims;
+namespace Hyperf\Jwt\Claims;
 
-use HyperfExt\Jwt\Exceptions\TokenInvalidException;
+use Hyperf\Jwt\Exceptions\TokenInvalidException;
 
 class NotBefore extends AbstractClaim
 {

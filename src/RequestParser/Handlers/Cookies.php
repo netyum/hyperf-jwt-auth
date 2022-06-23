@@ -8,9 +8,9 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt\RequestParser\Handlers;
+namespace Hyperf\Jwt\RequestParser\Handlers;
 
-use HyperfExt\Jwt\Contracts\RequestParser\HandlerInterface as ParserContract;
+use Hyperf\Jwt\Contracts\RequestParser\HandlerInterface as ParserContract;
 use Psr\Http\Message\ServerRequestInterface;
 
 class Cookies implements ParserContract

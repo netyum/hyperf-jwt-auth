@@ -18,10 +18,10 @@ use Hyperf\HttpMessage\Server\Request;
 use Hyperf\HttpServer\Request as HttpServerRequest;
 use Hyperf\Utils\ApplicationContext;
 use Hyperf\Utils\Context;
-use HyperfExt\Jwt\Contracts\PayloadValidatorInterface;
-use HyperfExt\Jwt\Contracts\TokenValidatorInterface;
-use HyperfExt\Jwt\Validators\PayloadValidator;
-use HyperfExt\Jwt\Validators\TokenValidator;
+use Hyperf\Jwt\Contracts\PayloadValidatorInterface;
+use Hyperf\Jwt\Contracts\TokenValidatorInterface;
+use Hyperf\Jwt\Validators\PayloadValidator;
+use Hyperf\Jwt\Validators\TokenValidator;
 use Psr\Http\Message\ServerRequestInterface;
 
 ! defined('BASE_PATH') && define('BASE_PATH', dirname(__DIR__, 1));

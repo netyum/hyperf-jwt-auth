@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt\Contracts\RequestParser;
+namespace Hyperf\Jwt\Contracts\RequestParser;
 
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -17,14 +17,14 @@ interface RequestParserInterface
     /**
      * Get the parser chain.
      *
-     * @return \HyperfExt\Jwt\Contracts\RequestParser\HandlerInterface[]
+     * @return \Hyperf\Jwt\Contracts\RequestParser\HandlerInterface[]
      */
     public function getHandlers(): array;
 
     /**
      * Set the order of the parser chain.
      *
-     * @param \HyperfExt\Jwt\Contracts\RequestParser\HandlerInterface[] $handlers
+     * @param \Hyperf\Jwt\Contracts\RequestParser\HandlerInterface[] $handlers
      *
      * @return $this
      */

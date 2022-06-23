@@ -8,18 +8,18 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt;
+namespace Hyperf\Jwt;
 
-use HyperfExt\Jwt\Commands\GenJwtKeypairCommand;
-use HyperfExt\Jwt\Commands\GenJwtSecretCommand;
-use HyperfExt\Jwt\Contracts\JwtFactoryInterface;
-use HyperfExt\Jwt\Contracts\ManagerInterface;
-use HyperfExt\Jwt\Contracts\PayloadValidatorInterface;
-use HyperfExt\Jwt\Contracts\RequestParser\RequestParserInterface;
-use HyperfExt\Jwt\Contracts\TokenValidatorInterface;
-use HyperfExt\Jwt\RequestParser\RequestParserFactory;
-use HyperfExt\Jwt\Validators\PayloadValidator;
-use HyperfExt\Jwt\Validators\TokenValidator;
+use Hyperf\Jwt\Commands\GenJwtKeypairCommand;
+use Hyperf\Jwt\Commands\GenJwtSecretCommand;
+use Hyperf\Jwt\Contracts\JwtFactoryInterface;
+use Hyperf\Jwt\Contracts\ManagerInterface;
+use Hyperf\Jwt\Contracts\PayloadValidatorInterface;
+use Hyperf\Jwt\Contracts\RequestParser\RequestParserInterface;
+use Hyperf\Jwt\Contracts\TokenValidatorInterface;
+use Hyperf\Jwt\RequestParser\RequestParserFactory;
+use Hyperf\Jwt\Validators\PayloadValidator;
+use Hyperf\Jwt\Validators\TokenValidator;
 
 class ConfigProvider
 {

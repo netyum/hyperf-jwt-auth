@@ -8,13 +8,13 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt\Claims;
+namespace Hyperf\Jwt\Claims;
 
 use Hyperf\Utils\ApplicationContext;
 use Hyperf\Utils\Contracts\Arrayable;
 use Hyperf\Utils\Contracts\Jsonable;
-use HyperfExt\Jwt\Contracts\ClaimInterface;
-use HyperfExt\Jwt\Contracts\ManagerInterface;
+use Hyperf\Jwt\Contracts\ClaimInterface;
+use Hyperf\Jwt\Contracts\ManagerInterface;
 use JsonSerializable;
 
 abstract class AbstractClaim implements ClaimInterface, Arrayable, Jsonable, JsonSerializable
@@ -34,7 +34,7 @@ abstract class AbstractClaim implements ClaimInterface, Arrayable, Jsonable, Jso
     private $value;
 
     /**
-     * @var \HyperfExt\Jwt\Claims\Factory
+     * @var \Hyperf\Jwt\Claims\Factory
      */
     private $factory;
 

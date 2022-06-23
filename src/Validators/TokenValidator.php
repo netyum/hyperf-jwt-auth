@@ -8,11 +8,11 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt\Validators;
+namespace Hyperf\Jwt\Validators;
 
-use HyperfExt\Jwt\Contracts\TokenValidatorInterface;
-use HyperfExt\Jwt\Exceptions\JwtException;
-use HyperfExt\Jwt\Exceptions\TokenInvalidException;
+use Hyperf\Jwt\Contracts\TokenValidatorInterface;
+use Hyperf\Jwt\Exceptions\JwtException;
+use Hyperf\Jwt\Exceptions\TokenInvalidException;
 
 class TokenValidator implements TokenValidatorInterface
 {
@@ -40,7 +40,7 @@ class TokenValidator implements TokenValidatorInterface
     }
 
     /**
-     * @throws \HyperfExt\Jwt\Exceptions\TokenInvalidException
+     * @throws \Hyperf\Jwt\Exceptions\TokenInvalidException
      */
     protected function validateStructure(string $token)
     {

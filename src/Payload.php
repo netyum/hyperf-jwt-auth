@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt;
+namespace Hyperf\Jwt;
 
 use ArrayAccess;
 use BadMethodCallException;
@@ -17,10 +17,10 @@ use Hyperf\Utils\ApplicationContext;
 use Hyperf\Utils\Arr;
 use Hyperf\Utils\Contracts\Arrayable;
 use Hyperf\Utils\Contracts\Jsonable;
-use HyperfExt\Jwt\Claims\AbstractClaim;
-use HyperfExt\Jwt\Claims\Collection;
-use HyperfExt\Jwt\Contracts\PayloadValidatorInterface;
-use HyperfExt\Jwt\Exceptions\PayloadException;
+use Hyperf\Jwt\Claims\AbstractClaim;
+use Hyperf\Jwt\Claims\Collection;
+use Hyperf\Jwt\Contracts\PayloadValidatorInterface;
+use Hyperf\Jwt\Exceptions\PayloadException;
 use JsonSerializable;
 
 class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerializable
@@ -28,12 +28,12 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
     /**
      * The collection of claims.
      *
-     * @var \HyperfExt\Jwt\Claims\Collection
+     * @var \Hyperf\Jwt\Claims\Collection
      */
     private $claims;
 
     /**
-     * @var \HyperfExt\Jwt\Contracts\PayloadValidatorInterface
+     * @var \Hyperf\Jwt\Contracts\PayloadValidatorInterface
      */
     private $validator;
 
@@ -76,7 +76,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
     {
         if (preg_match('/get(.+)\b/i', $method, $matches)) {
             foreach ($this->claims as $claim) {
-                if (get_class($claim) === 'HyperfExt\\Jwt\\Claims\\' . $matches[1]) {
+                if (get_class($claim) === 'Hyperf\\Jwt\\Claims\\' . $matches[1]) {
                     return $claim->getValue();
                 }
             }
@@ -219,7 +219,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
      * @param mixed $key
      * @param mixed $value
      *
-     * @throws \HyperfExt\Jwt\Exceptions\PayloadException
+     * @throws \Hyperf\Jwt\Exceptions\PayloadException
      */
     public function offsetSet($key, $value)
     {
@@ -231,7 +231,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
      *
      * @param string $key
      *
-     * @throws \HyperfExt\Jwt\Exceptions\PayloadException
+     * @throws \Hyperf\Jwt\Exceptions\PayloadException
      */
     public function offsetUnset($key)
     {

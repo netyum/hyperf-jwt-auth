@@ -11,9 +11,9 @@ declare(strict_types=1);
 namespace HyperfTest;
 
 use Exception;
-use HyperfExt\Jwt\Codec;
-use HyperfExt\Jwt\Exceptions\JwtException;
-use HyperfExt\Jwt\Exceptions\TokenInvalidException;
+use Hyperf\Jwt\Codec;
+use Hyperf\Jwt\Exceptions\JwtException;
+use Hyperf\Jwt\Exceptions\TokenInvalidException;
 use InvalidArgumentException;
 use Lcobucci\JWT\Builder;
 use Lcobucci\JWT\Parser;
@@ -243,7 +243,7 @@ class CodecTest extends AbstractTestCase
      * @param $secret
      * @param $algo
      *
-     * @return \HyperfExt\Jwt\Codec|\PHPUnit\Framework\MockObject\MockObject
+     * @return \Hyperf\Jwt\Codec|\PHPUnit\Framework\MockObject\MockObject
      */
     public function getCodec($secret, $algo, array $keys = [])
     {

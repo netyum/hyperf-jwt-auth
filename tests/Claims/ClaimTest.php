@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace HyperfTest\Claims;
 
 use Hyperf\Utils\Contracts\Arrayable;
-use HyperfExt\Jwt\Claims\Expiration;
+use Hyperf\Jwt\Claims\Expiration;
 use HyperfTest\AbstractTestCase;
 
 /**
@@ -21,7 +21,7 @@ use HyperfTest\AbstractTestCase;
 class ClaimTest extends AbstractTestCase
 {
     /**
-     * @var \HyperfExt\Jwt\Claims\Expiration
+     * @var \Hyperf\Jwt\Claims\Expiration
      */
     protected $claim;
 
@@ -36,7 +36,7 @@ class ClaimTest extends AbstractTestCase
     public function itShouldThrowAnExceptionWhenPassingAnInvalidValue()
     {
         $this->expectExceptionMessage('Invalid value provided for claim [exp]');
-        $this->expectException(\HyperfExt\Jwt\Exceptions\InvalidClaimException::class);
+        $this->expectException(\Hyperf\Jwt\Exceptions\InvalidClaimException::class);
         $this->claim->setValue('foo');
     }
 

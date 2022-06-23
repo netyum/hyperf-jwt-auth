@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt;
+namespace Hyperf\Jwt;
 
 use BadMethodCallException;
 use Hyperf\Utils\Context;
-use HyperfExt\Jwt\Contracts\JwtSubjectInterface;
-use HyperfExt\Jwt\Contracts\ManagerInterface;
-use HyperfExt\Jwt\Contracts\RequestParser\RequestParserInterface;
-use HyperfExt\Jwt\Exceptions\JwtException;
+use Hyperf\Jwt\Contracts\JwtSubjectInterface;
+use Hyperf\Jwt\Contracts\ManagerInterface;
+use Hyperf\Jwt\Contracts\RequestParser\RequestParserInterface;
+use Hyperf\Jwt\Exceptions\JwtException;
 use Psr\Http\Message\ServerRequestInterface;
 
 class Jwt
@@ -23,12 +23,12 @@ class Jwt
     use CustomClaims;
 
     /**
-     * @var \HyperfExt\Jwt\Manager
+     * @var \Hyperf\Jwt\Manager
      */
     protected $manager;
 
     /**
-     * @var \HyperfExt\Jwt\Contracts\RequestParser\RequestParserInterface
+     * @var \Hyperf\Jwt\Contracts\RequestParser\RequestParserInterface
      */
     protected $requestParser;
 
@@ -91,7 +91,7 @@ class Jwt
     /**
      * Refresh an expired token.
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      */
     public function refresh(bool $forceForever = false): string
     {
@@ -112,7 +112,7 @@ class Jwt
     /**
      * Invalidate a token (add it to the blacklist).
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      * @return $this
      */
     public function invalidate(bool $forceForever = false)
@@ -128,7 +128,7 @@ class Jwt
      * Alias to get the payload, and as a result checks that
      * the token is valid i.e. not expired or blacklisted.
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      */
     public function checkOrFail(): Payload
     {
@@ -138,7 +138,7 @@ class Jwt
     /**
      * Check that the token is valid.
      *
-     * @return bool|\HyperfExt\Jwt\Payload
+     * @return bool|\Hyperf\Jwt\Payload
      */
     public function check(bool $getPayload = false)
     {
@@ -171,7 +171,7 @@ class Jwt
     /**
      * Parse the token from the request.
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      * @return $this
      */
     public function parseToken()
@@ -185,7 +185,7 @@ class Jwt
 
     /**
      * Get the raw Payload instance.
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      */
     public function getPayload(bool $ignoreExpired = false): Payload
     {
@@ -197,7 +197,7 @@ class Jwt
     /**
      * Convenience method to get a claim value.
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      * @return mixed
      */
     public function getClaim(string $claim)
@@ -218,7 +218,7 @@ class Jwt
      *
      * @param object|string $model
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      */
     public function checkSubjectModel($model): bool
     {
@@ -232,7 +232,7 @@ class Jwt
     /**
      * Set the token.
      *
-     * @param \HyperfExt\Jwt\Token|string $token
+     * @param \Hyperf\Jwt\Token|string $token
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class Jwt
     /**
      * Ensure that a token is available.
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      */
     protected function requireToken()
     {

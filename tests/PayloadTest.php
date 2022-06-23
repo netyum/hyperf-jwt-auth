@@ -10,17 +10,17 @@ declare(strict_types=1);
  */
 namespace HyperfTest;
 
-use HyperfExt\Jwt\Claims\Audience;
-use HyperfExt\Jwt\Claims\Collection;
-use HyperfExt\Jwt\Claims\Expiration;
-use HyperfExt\Jwt\Claims\IssuedAt;
-use HyperfExt\Jwt\Claims\Issuer;
-use HyperfExt\Jwt\Claims\JwtId;
-use HyperfExt\Jwt\Claims\NotBefore;
-use HyperfExt\Jwt\Claims\Subject;
-use HyperfExt\Jwt\Contracts\ClaimInterface;
-use HyperfExt\Jwt\Exceptions\PayloadException;
-use HyperfExt\Jwt\Payload;
+use Hyperf\Jwt\Claims\Audience;
+use Hyperf\Jwt\Claims\Collection;
+use Hyperf\Jwt\Claims\Expiration;
+use Hyperf\Jwt\Claims\IssuedAt;
+use Hyperf\Jwt\Claims\Issuer;
+use Hyperf\Jwt\Claims\JwtId;
+use Hyperf\Jwt\Claims\NotBefore;
+use Hyperf\Jwt\Claims\Subject;
+use Hyperf\Jwt\Contracts\ClaimInterface;
+use Hyperf\Jwt\Exceptions\PayloadException;
+use Hyperf\Jwt\Payload;
 
 /**
  * @internal
@@ -29,7 +29,7 @@ use HyperfExt\Jwt\Payload;
 class PayloadTest extends AbstractTestCase
 {
     /**
-     * @var \HyperfExt\Jwt\Payload
+     * @var \Hyperf\Jwt\Payload
      */
     protected $payload;
 
@@ -218,7 +218,7 @@ class PayloadTest extends AbstractTestCase
     }
 
     /**
-     * @return \HyperfExt\Jwt\Payload
+     * @return \Hyperf\Jwt\Payload
      */
     private function getTestPayload(array $extraClaims = [])
     {

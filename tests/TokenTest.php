@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace HyperfTest;
 
-use HyperfExt\Jwt\Token;
+use Hyperf\Jwt\Token;
 
 /**
  * @internal
@@ -19,7 +19,7 @@ use HyperfExt\Jwt\Token;
 class TokenTest extends AbstractTestCase
 {
     /**
-     * @var \HyperfExt\Jwt\Token
+     * @var \Hyperf\Jwt\Token
      */
     protected $token;
 

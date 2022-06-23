@@ -10,16 +10,16 @@ declare(strict_types=1);
  */
 namespace HyperfTest;
 
-use HyperfExt\Jwt\Blacklist;
-use HyperfExt\Jwt\Claims\Collection;
-use HyperfExt\Jwt\Claims\Expiration;
-use HyperfExt\Jwt\Claims\IssuedAt;
-use HyperfExt\Jwt\Claims\Issuer;
-use HyperfExt\Jwt\Claims\JwtId;
-use HyperfExt\Jwt\Claims\NotBefore;
-use HyperfExt\Jwt\Claims\Subject;
-use HyperfExt\Jwt\Contracts\StorageInterface;
-use HyperfExt\Jwt\Payload;
+use Hyperf\Jwt\Blacklist;
+use Hyperf\Jwt\Claims\Collection;
+use Hyperf\Jwt\Claims\Expiration;
+use Hyperf\Jwt\Claims\IssuedAt;
+use Hyperf\Jwt\Claims\Issuer;
+use Hyperf\Jwt\Claims\JwtId;
+use Hyperf\Jwt\Claims\NotBefore;
+use Hyperf\Jwt\Claims\Subject;
+use Hyperf\Jwt\Contracts\StorageInterface;
+use Hyperf\Jwt\Payload;
 use Mockery;
 
 /**
@@ -29,12 +29,12 @@ use Mockery;
 class BlacklistTest extends AbstractTestCase
 {
     /**
-     * @var \HyperfExt\Jwt\Contracts\StorageInterface|\Mockery\MockInterface
+     * @var \Hyperf\Jwt\Contracts\StorageInterface|\Mockery\MockInterface
      */
     protected $storage;
 
     /**
-     * @var \HyperfExt\Jwt\Blacklist
+     * @var \Hyperf\Jwt\Blacklist
      */
     protected $blacklist;
 

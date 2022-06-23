@@ -11,7 +11,7 @@ declare(strict_types=1);
 namespace HyperfTest\Storage;
 
 use Hyperf\Cache\Cache;
-use HyperfExt\Jwt\Storage\HyperfCache;
+use Hyperf\Jwt\Storage\HyperfCache;
 use HyperfTest\AbstractTestCase;
 use Mockery;
 
@@ -27,7 +27,7 @@ class HyperfCacheTest extends AbstractTestCase
     protected $cache;
 
     /**
-     * @var \HyperfExt\Jwt\Storage\HyperfCache
+     * @var \Hyperf\Jwt\Storage\HyperfCache
      */
     protected $storage;
 

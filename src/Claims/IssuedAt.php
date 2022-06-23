@@ -8,11 +8,11 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt\Claims;
+namespace Hyperf\Jwt\Claims;
 
-use HyperfExt\Jwt\Exceptions\InvalidClaimException;
-use HyperfExt\Jwt\Exceptions\TokenExpiredException;
-use HyperfExt\Jwt\Exceptions\TokenInvalidException;
+use Hyperf\Jwt\Exceptions\InvalidClaimException;
+use Hyperf\Jwt\Exceptions\TokenExpiredException;
+use Hyperf\Jwt\Exceptions\TokenInvalidException;
 
 class IssuedAt extends AbstractClaim
 {

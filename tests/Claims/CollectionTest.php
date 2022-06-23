@@ -10,13 +10,13 @@ declare(strict_types=1);
  */
 namespace HyperfTest\Claims;
 
-use HyperfExt\Jwt\Claims\Collection;
-use HyperfExt\Jwt\Claims\Expiration;
-use HyperfExt\Jwt\Claims\IssuedAt;
-use HyperfExt\Jwt\Claims\Issuer;
-use HyperfExt\Jwt\Claims\JwtId;
-use HyperfExt\Jwt\Claims\NotBefore;
-use HyperfExt\Jwt\Claims\Subject;
+use Hyperf\Jwt\Claims\Collection;
+use Hyperf\Jwt\Claims\Expiration;
+use Hyperf\Jwt\Claims\IssuedAt;
+use Hyperf\Jwt\Claims\Issuer;
+use Hyperf\Jwt\Claims\JwtId;
+use Hyperf\Jwt\Claims\NotBefore;
+use Hyperf\Jwt\Claims\Subject;
 use HyperfTest\AbstractTestCase;
 
 /**

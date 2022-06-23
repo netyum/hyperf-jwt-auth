@@ -10,8 +10,8 @@ declare(strict_types=1);
  */
 namespace HyperfTest\Validators;
 
-use HyperfExt\Jwt\Contracts\TokenValidatorInterface;
-use HyperfExt\Jwt\Exceptions\TokenInvalidException;
+use Hyperf\Jwt\Contracts\TokenValidatorInterface;
+use Hyperf\Jwt\Exceptions\TokenInvalidException;
 use HyperfTest\AbstractTestCase;
 
 /**
@@ -21,7 +21,7 @@ use HyperfTest\AbstractTestCase;
 class TokenValidatorTest extends AbstractTestCase
 {
     /**
-     * @var \HyperfExt\Jwt\Validators\TokenValidator
+     * @var \Hyperf\Jwt\Validators\TokenValidator
      */
     protected $validator;
 

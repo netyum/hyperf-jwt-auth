@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt;
+namespace Hyperf\Jwt;
 
 use Exception;
 use Hyperf\Utils\Arr;
 use Hyperf\Utils\Collection;
-use HyperfExt\Jwt\Contracts\CodecInterface;
-use HyperfExt\Jwt\Exceptions\JwtException;
-use HyperfExt\Jwt\Exceptions\TokenInvalidException;
+use Hyperf\Jwt\Contracts\CodecInterface;
+use Hyperf\Jwt\Exceptions\JwtException;
+use Hyperf\Jwt\Exceptions\TokenInvalidException;
 use Lcobucci\JWT\Builder;
 use Lcobucci\JWT\Configuration;
 use Lcobucci\JWT\Parser;
@@ -102,7 +102,7 @@ class Codec implements CodecInterface
     /**
      * @param null|\Lcobucci\JWT\Configuration $config
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      */
     public function __construct(string $secret, string $algo, array $keys, $config = null)
     {
@@ -224,7 +224,7 @@ class Codec implements CodecInterface
     /**
      * Create a JSON Web Token.
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      */
     public function encode(array $payload): string
     {
@@ -243,7 +243,7 @@ class Codec implements CodecInterface
     /**
      * Decode a JSON Web Token.
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      */
     public function decode(string $token): array
     {
@@ -317,7 +317,7 @@ class Codec implements CodecInterface
     /**
      * Get the signer instance.
      *
-     * @throws \HyperfExt\Jwt\Exceptions\JwtException
+     * @throws \Hyperf\Jwt\Exceptions\JwtException
      */
     protected function getSigner(): Signer
     {

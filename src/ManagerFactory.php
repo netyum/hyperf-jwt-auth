@@ -8,13 +8,13 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt;
+namespace Hyperf\Jwt;
 
 use Hyperf\Contract\ConfigInterface;
-use HyperfExt\Jwt\Claims\Factory as ClaimFactory;
-use HyperfExt\Jwt\Contracts\CodecInterface;
-use HyperfExt\Jwt\Exceptions\InvalidConfigException;
-use HyperfExt\Jwt\Storage\HyperfCache;
+use Hyperf\Jwt\Claims\Factory as ClaimFactory;
+use Hyperf\Jwt\Contracts\CodecInterface;
+use Hyperf\Jwt\Exceptions\InvalidConfigException;
+use Hyperf\Jwt\Storage\HyperfCache;
 use Psr\Container\ContainerInterface;
 
 class ManagerFactory

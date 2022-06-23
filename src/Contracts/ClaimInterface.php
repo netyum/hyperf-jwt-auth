@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt\Contracts;
+namespace Hyperf\Jwt\Contracts;
 
 interface ClaimInterface
 {
@@ -17,7 +17,7 @@ interface ClaimInterface
      *
      * @param mixed $value
      *
-     * @throws \HyperfExt\Jwt\Exceptions\InvalidClaimException
+     * @throws \Hyperf\Jwt\Exceptions\InvalidClaimException
      *
      * @return $this
      */

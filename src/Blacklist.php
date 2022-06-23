@@ -8,16 +8,16 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt;
+namespace Hyperf\Jwt;
 
-use HyperfExt\Jwt\Contracts\StorageInterface;
+use Hyperf\Jwt\Contracts\StorageInterface;
 
 class Blacklist
 {
     /**
      * The storage.
      *
-     * @var \HyperfExt\Jwt\Contracts\StorageInterface
+     * @var \Hyperf\Jwt\Contracts\StorageInterface
      */
     protected $storage;
 

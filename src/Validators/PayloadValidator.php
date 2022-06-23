@@ -8,13 +8,13 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt\Validators;
+namespace Hyperf\Jwt\Validators;
 
 use Hyperf\Contract\ConfigInterface;
-use HyperfExt\Jwt\Claims\Collection;
-use HyperfExt\Jwt\Contracts\PayloadValidatorInterface;
-use HyperfExt\Jwt\Exceptions\JwtException;
-use HyperfExt\Jwt\Exceptions\TokenInvalidException;
+use Hyperf\Jwt\Claims\Collection;
+use Hyperf\Jwt\Contracts\PayloadValidatorInterface;
+use Hyperf\Jwt\Exceptions\JwtException;
+use Hyperf\Jwt\Exceptions\TokenInvalidException;
 
 class PayloadValidator implements PayloadValidatorInterface
 {
@@ -64,7 +64,7 @@ class PayloadValidator implements PayloadValidatorInterface
      * Ensure the payload contains the required claims and
      * the claims have the relevant type.
      *
-     * @throws \HyperfExt\Jwt\Exceptions\TokenInvalidException
+     * @throws \Hyperf\Jwt\Exceptions\TokenInvalidException
      */
     protected function validateStructure(Collection $claims)
     {
@@ -77,8 +77,8 @@ class PayloadValidator implements PayloadValidatorInterface
     /**
      * Validate the payload timestamps.
      *
-     * @throws \HyperfExt\Jwt\Exceptions\TokenExpiredException
-     * @throws \HyperfExt\Jwt\Exceptions\TokenInvalidException
+     * @throws \Hyperf\Jwt\Exceptions\TokenExpiredException
+     * @throws \Hyperf\Jwt\Exceptions\TokenInvalidException
      */
     protected function validatePayload(Collection $claims, bool $ignoreExpired = false): Collection
     {

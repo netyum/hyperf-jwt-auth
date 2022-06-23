@@ -11,14 +11,14 @@ declare(strict_types=1);
 namespace HyperfTest\Claims;
 
 use Hyperf\HttpMessage\Server\Request;
-use HyperfExt\Jwt\Claims\Custom;
-use HyperfExt\Jwt\Claims\Expiration;
-use HyperfExt\Jwt\Claims\Factory;
-use HyperfExt\Jwt\Claims\IssuedAt;
-use HyperfExt\Jwt\Claims\Issuer;
-use HyperfExt\Jwt\Claims\JwtId;
-use HyperfExt\Jwt\Claims\NotBefore;
-use HyperfExt\Jwt\Claims\Subject;
+use Hyperf\Jwt\Claims\Custom;
+use Hyperf\Jwt\Claims\Expiration;
+use Hyperf\Jwt\Claims\Factory;
+use Hyperf\Jwt\Claims\IssuedAt;
+use Hyperf\Jwt\Claims\Issuer;
+use Hyperf\Jwt\Claims\JwtId;
+use Hyperf\Jwt\Claims\NotBefore;
+use Hyperf\Jwt\Claims\Subject;
 use HyperfTest\AbstractTestCase;
 use HyperfTest\Fixtures\Foo;
 use Psr\Http\Message\ServerRequestInterface;
@@ -30,7 +30,7 @@ use Psr\Http\Message\ServerRequestInterface;
 class FactoryTest extends AbstractTestCase
 {
     /**
-     * @var \HyperfExt\Jwt\Claims\Factory
+     * @var \Hyperf\Jwt\Claims\Factory
      */
     protected $factory;
 

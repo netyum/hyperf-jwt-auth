@@ -8,18 +8,18 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
-namespace HyperfExt\Jwt;
+namespace Hyperf\Jwt;
 
-use HyperfExt\Jwt\Claims\Collection;
-use HyperfExt\Jwt\Claims\Factory as ClaimFactory;
-use HyperfExt\Jwt\Contracts\ClaimInterface;
+use Hyperf\Jwt\Claims\Collection;
+use Hyperf\Jwt\Claims\Factory as ClaimFactory;
+use Hyperf\Jwt\Contracts\ClaimInterface;
 
 class PayloadFactory
 {
     /**
      * The claim factory.
      *
-     * @var \HyperfExt\Jwt\Claims\Factory
+     * @var \Hyperf\Jwt\Claims\Factory
      */
     protected $claimFactory;
 

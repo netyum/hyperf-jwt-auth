@@ -15,12 +15,12 @@ use Hyperf\HttpMessage\Server\Request;
 use Hyperf\HttpServer\Request as HttpServerRequest;
 use Hyperf\HttpServer\Router\Dispatched;
 use Hyperf\Utils\Context;
-use HyperfExt\Jwt\RequestParser\Handlers\AuthHeaders;
-use HyperfExt\Jwt\RequestParser\Handlers\Cookies;
-use HyperfExt\Jwt\RequestParser\Handlers\InputSource;
-use HyperfExt\Jwt\RequestParser\Handlers\QueryString;
-use HyperfExt\Jwt\RequestParser\Handlers\RouteParams;
-use HyperfExt\Jwt\RequestParser\RequestParser;
+use Hyperf\Jwt\RequestParser\Handlers\AuthHeaders;
+use Hyperf\Jwt\RequestParser\Handlers\Cookies;
+use Hyperf\Jwt\RequestParser\Handlers\InputSource;
+use Hyperf\Jwt\RequestParser\Handlers\QueryString;
+use Hyperf\Jwt\RequestParser\Handlers\RouteParams;
+use Hyperf\Jwt\RequestParser\RequestParser;
 use Psr\Http\Message\ServerRequestInterface;
 
 /**

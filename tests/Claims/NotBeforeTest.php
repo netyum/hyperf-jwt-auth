@@ -10,8 +10,8 @@ declare(strict_types=1);
  */
 namespace HyperfTest\Claims;
 
-use HyperfExt\Jwt\Claims\NotBefore;
-use HyperfExt\Jwt\Exceptions\InvalidClaimException;
+use Hyperf\Jwt\Claims\NotBefore;
+use Hyperf\Jwt\Exceptions\InvalidClaimException;
 use HyperfTest\AbstractTestCase;
 
 /**
